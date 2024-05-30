@@ -2,7 +2,19 @@ import React from 'react'
 import { BentoGrid, BentoGridItem } from './ui/BentoGrid'
 import { gridItems } from '@/data'
 
-const Grid = () => {
+const Grid = ({
+  children,
+  title,
+  href,
+  className,
+  containerClassName,
+}: {
+  children: React.ReactNode;
+  title?: string;
+  href?: string;
+  className?: string;
+  containerClassName?: string;
+}) => {
   return (
     <section id='about' className='flex justify-center items-center'>
         <BentoGrid className='w-full py-20'>

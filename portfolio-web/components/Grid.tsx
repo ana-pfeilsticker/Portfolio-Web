@@ -9,7 +9,7 @@ const Grid = ({
   className,
   containerClassName,
 }: {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   title?: string;
   href?: string;
   className?: string;

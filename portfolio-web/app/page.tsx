@@ -1,7 +1,6 @@
   
   "use client";
 
-import Image from "next/image";
 import Hero from "@/components/hero"
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { FaHome } from "react-icons/fa";
@@ -17,7 +16,7 @@ export default function Home() {
           {name: "About", link: "#about", icon: <FaHome/>}
         ]} />
         <Hero />
-        <Grid children/>
+        <Grid />
         <RecentProjects />
       </div>
     </main>
